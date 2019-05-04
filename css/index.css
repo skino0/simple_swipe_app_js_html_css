@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+:root {
+    --main-blackbg:rgb(19, 18, 18);
+    
+}
+html{
+    overflow-x:hidden!important;
+
+}
+
+body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden!important;
+    /*hidden in end*/
+    overflow-y:auto;
+}
+
+
+#main_con {
+    position:absolute;
+    top:0%;
+    left:0%;
+    width:100vw;
+    height:100vh;
+    background:#74b9ff;
+    z-index:-1;
+    transition-duration:.5s!important;
+
+}
+
+#main_con.focus {
+    transition-duration:.5s!important;
+    left:0%;
+}
+#main_con.outside {
+    transition-duration:.5s!important;
+    left:-100%;
+}
+
+#right_con {
+    position:absolute;
+    top:0%;
+    left:100%;
+    width:100vw;
+    height:100vh;
+    background:#ff7675;
+    z-index:-1;
+    transition-duration:.5s!important;
+
+}
+/*right comes into view*/
+#right_con.focus {
+    transition-duration:.5s!important;
+    left:0%;
+}
+
+#left_con {
+    position:absolute;
+    top:0%;
+    left:-100%;
+    width:100vw;
+    height:100vh;
+    background:#ff7675;
+    z-index:-1;
+}
+
+/*right comes into view*/
+#left_con.focus {
+    transition-duration:.5s!important;
+    left:0%;
+}
+
